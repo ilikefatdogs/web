@@ -11,20 +11,19 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
-
 .firstpg {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
 
- .back-video {
+.back-video {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   object-fit: cover;
   z-index: 0;
-} 
+}
 
 .video-overlay {
   position: absolute;
@@ -44,7 +43,7 @@ body {
 
 .title {
   color: #bcb9b9;
-  font-size: 60px;
+  font-size: 3.75rem;
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
@@ -54,8 +53,6 @@ body {
   transition: all 0.5s ease;
   z-index: -1;
 }
-
-
 
 .top-bar {
   position: fixed;
@@ -67,76 +64,69 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
-  
+  z-index: 6;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-
 .name {
   position: absolute;
-  left: 20px;
+  left: 1.25rem;
   font-size: 1rem;
 }
 
 .star {
-  width: 19px;
-  height: 19px;
+  width: 1.2rem;
+  height: 1.2rem;
   position: absolute;
-  top: 20px;
+  top: 1.25rem;
   left: 11.5%;
 }
 
 .b1, .b2, .b3, .b4 {
-  font-size: 14px;
+  font-size: 0.875rem;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
-  
 }
 
-.b1 { position: absolute; left:68% ; }
+.b1 { position: absolute; left: 68%; }
 .b2 { position: absolute; left: 75%; }
 .b3 { position: absolute; left: 83%; }
 .b4 { position: absolute; left: 90%; }
 
-/* About secrion */
 .about {
-   position: relative;
+  position: relative;
   height: 100vh;
   overflow: hidden;
-}
-
-.me {
-  font-size:30px;
-  color: #a42228;
-  max-width: 700px;
-  position: absolute;
-  top: 25%;
-  left: 10px;
+  background-image: url('https://i.pinimg.com/736x/44/21/5d/44215d80c8ac731169f6014f54c53d7f.jpg');
   
 }
 
-
+.me {
+  font-size: 1.875rem;
+  color: #a42228;
+  max-width: 43.75rem;
+  position: absolute;
+  top: 25%;
+  left: 0.625rem;
+}
 
 .camera-mask {
   position: relative;
-  width: 400px;
-  height: 600px;
+  width: 25rem;
+  height: 37.5rem;
 }
 
 .scrollcontainer {
   position: absolute;
-  top: 5%; 
-  left: 45%;
-  width: 300px;
-  height: 180px;
+  top: -15%; 
+  left: -35%;
+  width: 18.75rem;
+  height: 11.25rem;
   overflow: hidden;
   z-index: 1;
   display: none;
-  
-   
 }
 
 .scroll {
@@ -145,26 +135,23 @@ body {
 }
 
 .scroll img {
-  width: 200px;
-  height: 150px;
+  width: 12.5rem;
+  height: 9.375rem;
   object-fit: cover;
   margin-right: 0; 
   display: block;  
-  
-  
 }
 
 .cam {
-  width: 500px;
-  height: 800px;
-  display: block;
-  position: relative;
+  width: 31.25rem;
+  height: 50rem;
+  position: absolute;
   z-index: 2;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 76%;
   display: none;
   pointer-events: none;
-  
+  transform: translate(-50%, -50%);
 }
 
 @keyframes scroll-left {
@@ -181,90 +168,51 @@ body {
   align-items: center;
 }
 
-
 .border {
- display: none;
-  width:500px ;
-  height: 50px;
+  display: none;
+  width: 31.25rem;
+  height: 3.125rem;
 }
 
-.card1 {
-  height: 200px;
-  width: 145px;
+.card1, .card2, .card3 {
+  height: 14.375rem;
+  width: 11.125rem;
   position: absolute;
   top: 25%;
-  left: 85%;
-  transition: transform 0.8s ease-in-out;
-  
-}
-
-.card1:hover {
- transform: scale(1.08) rotate(-3deg);
-}
-
-
-.card2 {
-  height: 200px;
-  width: 145px;
-  position: absolute;
-  top: 25%;
-  left: 60%;
   transition: transform 0.5s ease-in-out;
-  
 }
 
-.card2:hover {
+.card1 { left: 85%; }
+.card2 { left: 53%; }
+.card3 { left: 69%; }
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
   transform: scale(1.08) rotate(-3deg);
 }
 
-.card3 {
-  height: 200px;
-  width: 145px;
-  position: absolute;
-  top: 25%;
-  left: 73%;
-  transition: transform 0.5s ease-in-out;
-  
-}
-
-.card3:hover {
-  transform: scale(1.08) rotate(3deg);
-}
-
-
 .ab {
   font-family: "Allura", cursive;
-  font-size: 70px;
+  font-size: 4.375rem;
   color: #a42228;
-  
-  
-
 }
 
-.b1:hover {
-  transform: scale(1.30);
+.b1:hover, .b2:hover, .b3:hover, .b4:hover {
+  transform: scale(1.3);
 }
-  .b2:hover {
-    transform: scale(1.30);
-  }
-    .b3:hover {
-      transform: scale(1.30);
-    }
-      .b4:hover {
-        transform: scale(1.30);
-      }
 
 .b1, .b2, .b3, .b4 {
   transition: transform 0.4s ease-in-out;
-  
 }
 
 .back {
   font-family: "Outfit", sans-serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   position: absolute;
   top: 30%;
-  border-radius: 20px;
+  left: 70%;
+  border-radius: 1.25rem;
   color: #a42228;
   background-color: whitesmoke;
   border-color: #a42228;
@@ -272,16 +220,13 @@ body {
   cursor: pointer;
   display: none;
   z-index: 9999;
-  
 }
 
 .cookie1, .cookie2, .cookie3, .cookie4, .cookie5 {
-  height: 150px;
-  width: 150px;
+  height: 9.375rem;
+  width: 9.375rem;
   transition: transform 0.3s ease-in-out;
   display: none;
-  
-
 }
 
 .cookie1:hover,
@@ -293,43 +238,9 @@ body {
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
-
-/*.cookie1 {
-  position: absolute;
-  top: 50%;
-  left: 64%;
-}
-
-.cookie2 {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-}
-
-.cookie3 {
-  position: absolute;
-  top: 40%;
-  left: 65%;
-}
-
-.cookie4 {
-  position:absolute;
-  top: 50%;
-  left: 20%;
-}
-
-.cookie5 {
-  position:absolute;
-  top: 50%;
-  left: 38%;
-}*/
 
 .projects {
   position: relative;
@@ -337,49 +248,147 @@ body {
   overflow: hidden;
 }
 
-.project1, .project2, .project3 {
-  display: none;
-
-
+.skills {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('https://i.pinimg.com/736x/6b/d7/87/6bd78799a145c03e80b574f1a3c5813e.jpg');
 }
 
-.divider {
+
+.project1, .project2, .project3 {
+  display: block;
+}
+
+.divider, .divider2, .divider3, .divider4, .dividerr {
   width: 100%;
-  height: 20px; 
-  background-color: #a42228; 
+  height: 2.25rem;
+  background-color: #a42228;
   margin: 0 auto;
   background-image: url('https://cdn.pixabay.com/photo/2015/12/13/10/11/red-1090868_1280.jpg');
 }
 
-
 .abstar {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   position: absolute;
   top: 8%;
   left: 22%;
-
 }
 
 .caption {
-  height: 395px;
-  width: 395px;
+  height: 24.6875rem;
+  width: 24.6875rem;
   position: absolute;
   left: 45%;
   top: 30%;
   display: none;
 }
 
-.divider2 {
-  width: 100%;
-  height: 20px; 
-  background-color: #a42228; 
-  margin: 0 auto;
-  background-image: url('https://cdn.pixabay.com/photo/2015/12/13/10/11/red-1090868_1280.jpg');
+.caption2 {
+  height: 25rem;
+  width: 25rem;
+  position: absolute;
+  left: 60%;
+  top: 7%;
+}
+
+
+.s1, .k, .i, .l1, .s2 {
+  height: 6.1875rem; /* 99px */
+  width: 5rem; /* 80px */
+}
+
+.hand {
+  height: 62.5rem; 
+  width: 75rem;   
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  animation: float 3s ease-in-out infinite;
+  display: block;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.25rem); /* 20px */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.skill1, .skill2, .skill3, .continued {
+  font-family: "Outfit", sans-serif;
+  animation: float 3s ease-in-out infinite;
+  color: #a42228;
+  font-size: 3.125rem; /* 50px */
+}
+
+.skill1 {
+  position: absolute;
+  top: 50%;
+  left: 44%;
+}
+
+.skill2 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.skill3 {
+  position: absolute;
+  top: 32%;
+  left: 45%;
+}
+
+.continued {
+  position: absolute;
+  top: 56%;
+  left: 40%;
+}
+
+.s1 {
+  position: absolute;
+  top: 5%;
+  left: 35%;
 
 }
 
-.caption2 {
-  height: 30px;
-  width: 30px;
+.k {
+  position: absolute;
+  top: 4%;
+  left: 40%;
+}
+
+.i {
+  position: absolute;
+  top: 5%;
+  left: 45%;
+}
+
+.l1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+}
+
+.l2 {
+  position: absolute;
+  top: 5%;
+  left: 55%;
+  height: 6.8125rem; 
+  width: 5rem; 
+}
+
+.s2 {
+  position: absolute;
+  top: 5%;
+  left: 60%;
 }

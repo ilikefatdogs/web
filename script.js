@@ -20,6 +20,7 @@ let back = document.querySelector('.back')
 let me = document.querySelector('.me');
 let ab = document.querySelector('.ab');
 let caption= document.querySelector('.caption');
+let caption2 = document.querySelector('.caption2')
 
 
 
@@ -53,6 +54,7 @@ card1.addEventListener('click', function (){
     card1.style.display='none';
     card2.style.display='none';
     card3.style.display='none';
+    caption2.style.display='none';
 
     
     
@@ -62,6 +64,7 @@ back.addEventListener('click', function(){
     card1.style.display="block";
     card2.style.display='block';
     card3.style.display='block';
+    caption2.style.display='block';
     cam.style.display="none";
     scrollcontainer.style.display='none';
     back.style.display='none';
