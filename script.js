@@ -21,6 +21,10 @@ let me = document.querySelector('.me');
 let ab = document.querySelector('.ab');
 let caption= document.querySelector('.caption');
 let caption2 = document.querySelector('.caption2')
+let about= document.querySelector('.about');
+let skills=document.querySelector('.skills');
+let projects =document.querySelector('.projects');
+let contact=document.querySelector('.contact');
 
 
 
@@ -69,4 +73,22 @@ back.addEventListener('click', function(){
     scrollcontainer.style.display='none';
     back.style.display='none';
     caption.style.display='none';
+});
+
+
+b1.addEventListener('click', () => {
+  projects.scrollIntoView({ behavior: 'smooth' });
+});
+
+b2.addEventListener('click', () => {
+  about.scrollIntoView({ behavior: 'smooth' });
+});
+
+b3.addEventListener('click', () => {
+    skills.scrollIntoView({ behavior: 'smooth' });
+  
+});
+
+b4.addEventListener('click', () => {
+  contact.scrollIntoView({ behavior: 'smooth' });
 });
